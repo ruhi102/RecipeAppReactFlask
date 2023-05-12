@@ -26,7 +26,7 @@ export default function LoginPage() {
                 console.log("here");
                 console.log(response);
                 //console.log(response.data);
-                navigate("/");
+                navigate("/nav");
             })
             .catch(function (error) {
                 console.log(error, 'error');
@@ -52,7 +52,7 @@ export default function LoginPage() {
             <button type="button" className="btn btn-primary btn-lg" onClick={logInUser} >Login</button>
               <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register" className="link-danger">Register</a></p>
           </form>
-          <p className="link-btn"><a href="/">Go to main page</a></p>
+          <p className="link-btn"><a href="/nav">Go to main page</a></p>
         </div>
             
       </div>

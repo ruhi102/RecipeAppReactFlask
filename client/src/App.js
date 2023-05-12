@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import LandingPage from "./pages/LandingPage";
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
+import NavigationPage from './pages/nav'
  
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
+            <Route path="/nav" component={<NavigationPage />} />
           
         </Routes>
       </BrowserRouter>
